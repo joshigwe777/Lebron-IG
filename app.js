@@ -7,3 +7,9 @@ t.addEventListener('click', () => {
     console.log(par[0].innerHtml);
     par[1].style.color = 'red';
 });
+
+gallery = document.querySelector(".gallery")
+gallery.addEventListener('click', (e) => {
+    imgage = e.target;
+    gallery.firstElementChild.style.display = 'none';
+});
